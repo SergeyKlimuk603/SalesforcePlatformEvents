@@ -28,3 +28,24 @@ for (Database.SaveResult sr : results) {
 }
 
 //---------------------------------------------------------------------------------------------
+// Publish Platform Event via Process Builder using TestObject__c
+
+insert new TestObject__c(Name = 'PublishPlatformEventFromProcessBuilder');
+
+insert new TestObject__c(Name = 'PublishPlatformEventRecodFromTriggeredFlow');
+
+
+// Database.SaveResult result = EventBus.publish(sobject);
+
+// if (result.isSuccess()) {
+//     System.debug('Successfully published event.');
+// } else {
+//     for(Database.Error err : result.getErrors()) {
+//         System.debug('Error returned: ' +
+//                     err.getStatusCode() +
+//                     ' - ' +
+//                     err.getMessage());
+//     }
+// }
+
+//---------------------------------------------------------------------------------------------
